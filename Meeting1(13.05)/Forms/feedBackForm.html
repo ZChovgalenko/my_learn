@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FeedBack</title>
+    <style>
+        label{
+            display: block ;
+        }
+        span{
+            display: block;
+        }
+        input{
+            display: block;
+        }
+        input[type=radio],
+        input[type="checkbox"]{
+            display: inline-block;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <form>
+        <fieldset >
+            <legend>Registration</legend>
+            <div>
+                <label>
+                <span> Ваше ім'я: *</span>
+                    
+                    <input 
+                        placeholder="Your name"
+                        type="text" 
+                        name="name" 
+                        autocomplete="name"
+                        required>
+                </label>
+
+                <span>
+                    <span>Ваш вік: *</span>
+
+                    <label>
+                        <input type="radio" name="age" value="less them 20"> 
+                        до 20
+                    </label>
+                    <label>
+                        <input type="radio" name="age" value="20-30">
+                        20-30
+                    </label>
+                    <label>
+                        <input type="radio" name="age" value="30-40">
+                        30-40
+                    </label>
+                    <label>
+                        <input type="radio" name="age" value="50+">
+                        50+
+                    </label>
+                </span>
+
+                <span>Чи маєте ви вас аккаунт</span> 
+
+                    <label>
+                        <input type="checkbox" name="facebookAkk" >
+                        Facebook
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="instagramAkk" >
+                        Instagram
+                    </label>
+               
+
+                <input type="checkbox" name="anotherAkk" > 
+                
+                <label>
+
+                 Свій варіант
+                
+                <input type="text" name="anotherAkkName" >  
+                </label>
+
+                <label>
+                    <span>E-mail адрес: *</span>
+                    
+                    <input type="email" name="email" autocomplete="email" required>
+                </label>
+                
+                <label>
+                    <span>Тема повідомлення: *</span>
+                
+                    <input type="te[x" name="theme" autocomplete="off" required >
+                </label>
+
+                <label>
+                    <span>Текст повідомлення: *</span>
+
+                    <textarea required name="message"></textarea>
+                </label>       
+                
+                <div>
+                    <button type="submit">Надіслати</button> 
+                </div>
+            </div> 
+        </fieldset>    
+    </form>
+</body>
+</html>
