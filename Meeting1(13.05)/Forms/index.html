@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework Form</title>
+    <style>
+       
+        
+    </style>
+</head>
+
+
+
+<body>
+    <fieldset>
+    
+        <!--Personal_information_form-->
+        <form> 
+            <fieldset>
+                <legend> Personal information</legend>
+                <div>
+                    <label>
+                    <span>Surname:</span> 
+                    <input name="surname" type="text" autocomplete="on"> 
+                    </label>
+                </div>
+                
+                <br>
+                
+
+                <div>
+                    <label>
+                        <span>Name:</span>
+                        <input name="name" type="text" autocomplete="name">
+                    </label>
+                </div>
+
+                <br>
+
+                <div>
+                    <label>
+                        <span>How old are you?</span> 
+                        <input name="old" type="number" value="12" required >
+                    </label>
+                </div> 
+
+                <br>
+                
+                <div>
+                    <label>
+                        <span>Full date of birth:</span> 
+                        <input  type="date" name="date-of-birth">
+                    </label>
+                </div>
+
+                <br>
+
+                <div>
+                    <span>I accept the term of the agreement</span>
+                    <input name="aceept" type="checkbox">
+                </div>
+            </fieldset>
+        </form>
+        <br>
+        <!-- Registration_form-->
+        <form>
+            <fieldset>
+                <legend>Registration</legend>
+                <div>
+                <label>
+                    <span>E-mail:</span>
+                    <input type="email" name="email"  autocomplete="on" placeholder="igerphone8@mail.com" required>
+                </label>
+                </div>
+                <br>
+                <label>
+                    <span>Password:</span>
+                    <input type="password" name="password"  required >
+                    <button type="button">
+                        <img width="18"  src="dandruff.png" alt="">
+                    </button>
+                </label>
+            </fieldset>
+
+        </form>
+        <br>
+        <!--An intresting fact about you!-->
+        <form>
+            <fieldset>
+            <legend>An intresting fact about you!</legend>
+            <div>
+            <label>
+                <span>Do you love cats?</span>
+                <input type="radio" name="love_cats" value="Yes">
+                Yes
+                <input type="radio" name="love_cats" value="No">
+                No 
+                </label> 
+            </div>
+            <br>
+            <div>
+                <label>
+                <span>What is your favorite color?</span>
+                <input type="color" name="favorite_color" value="#000000" required>
+                </label>
+            </div>
+            <br>
+            <div>
+                <label>
+                <span>What time do you go to bed?</span>
+                <input type="time" name="time_go_to_bed" required>
+                </label>
+            </div>
+            <br>
+            <div>
+                <label>
+                    <span>What are you favorite brand of cars?</span>
+                    <input type="text" name="favorite_cars" value="BMW Audi Lada" ">
+                    
+                </label>
+                <br>
+                <br>
+                <label>
+                    <span>How do you rate our work?</span>
+                    <input type="range" name="rate_our_work" min="0" max="100" step="1" value="1" required>
+                </label>
+            </div>
+
+            
+            </fieldset>
+            
+            
+        </form>
+        <br>
+        <!--Additional info-->
+        <form >
+            <fieldset>
+                <legend>Additional info</legend>
+                <div>
+                    <label>
+                    <span>Comments:</span>
+                    <textarea name="comments" cols="15" rows="2"></textarea> 
+                    </label>
+                </div>
+                
+                <div>
+                    <label>
+                    <span>Would you recommed us?</span>
+                    <select name="yes_no" size="1">
+                        <option value="1">yes</option>
+                        <option value="2">no</option>
+                    </select>
+                    </label>
+                </div>
+                </fieldset>
+            
+        </form>
+        <br>
+        <br>
+        <!--Button Submit-->
+        <button type="submit">Submit</button>
+    
+    </fieldset>
+
+</body>
+</html>
