@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+    padding: 50px;
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper{
+    margin: 0;
+}
+
+.flex__conteiner{
+    border: 5px solid black;
+    display:flex;
+    justify-content:space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    /* flex-flow:column-reverse wrap-reverse; */
+    /* height: 300px; */
+}
+
+.flex__element{
+    border: 2px solid rebeccapurple;
+    padding: 10px;
+    
+}
+
+.child_1{
+    order:1;
+    flex-basis: 150px;
+    flex-grow: 1;
+}
+.child_2{
+    order: 2;
+    flex-basis: 200px;
+}
+.child_3{
+    order: 3;
+    flex-basis: 100px;
+}
