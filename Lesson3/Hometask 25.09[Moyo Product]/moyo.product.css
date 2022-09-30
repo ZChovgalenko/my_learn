@@ -26,6 +26,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 45px;
 }
 
 .product__main_card{
@@ -41,9 +43,7 @@
     border: 1px solid #F3F3F3;
 }
 
-.product__main_card:not(:last-child){
-    margin-right: 45px;;
-}
+
 
 .product__img{
     width: 160px;
