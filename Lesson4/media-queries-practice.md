@@ -12,6 +12,8 @@ Add styles to [markup](media-queries-practice.html)
 
 ## From large Desktop
 
+        1800px
+
 - [X] 1 block -> 4 elements in a row: all equal width
 - [X] 2 block -> 2 elements in a row: all equal width
 - [X] 3 block -> 3 elements in a row: all 25% width
@@ -20,6 +22,8 @@ Add styles to [markup](media-queries-practice.html)
 
 ## From medium desktop to large desktop
 
+        1200px
+
 - [X] 1 block -> 2 elements in a row: all equal width, so it will have 2 rows width: 50%
 - [X] 2 block -> 2 elements in a row: all equal width
 - [X] 3 block -> 3 elements: 1 -> 50%, 2 -> 50% and last 100%
@@ -27,6 +31,8 @@ Add styles to [markup](media-queries-practice.html)
 - [X] 5 block -> 3 or 2 elements in a row, all 33% width, centered in center of parent block
 
 ## From Tablet Landscape to medium desktop
+ 
+        960px
 
 - [X] 1 block -> 2 elements in a row: all equal width, so it will have 2 rows width: 50%
 - [X] 2 block -> 2 elements in a row: all equal width
@@ -35,6 +41,8 @@ Add styles to [markup](media-queries-practice.html)
 - [X] 5 block -> 2 elements in a row, all equal width, the last one should be 100% width
 
 ## From Tablet Portrait to Tablet Landscape
+ 
+        768px
 
 - [X] 1 block -> all elements width: 50%
 - [X] 2 block -> all elements width: 50%
@@ -43,6 +51,8 @@ Add styles to [markup](media-queries-practice.html)
 - [X] 5 block -> 2 elements in a row, 50% width, last one is 100% width
 
 ## From Mobile to Tablet Portrait
+
+    320px
 
 - [X] 1 block -> all elements width: 50%
 - [X] 2 block -> all elements width: 50%

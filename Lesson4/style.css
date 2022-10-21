@@ -118,7 +118,7 @@
 }
 
 
-@media (max-width: 762px) {
+@media (max-width: 768px) {
     .fourth {
         flex-wrap: wrap;
     }
