@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <link rel="stylesheet" href="task1.css">
+    
+</head>
+<body>
+    <!-- 1. Slider -->
+    <!-- 2. Menu -->
+    <!-- 3. Alert/Confirm  -->
+
+
+    <div class="double">
+        <input type="checkbox" id="doubleState" >
+        <div class="double__body">
+            <div class="double__slide">
+                <div class="double__slide-left">
+                    <img src="img/dog.jpg" class="double__slide-image" alt="">
+                </div>
+                <div class="double__slide-right">
+                    <img src="img/dog.jpg" class="double__slide-image" alt="">
+                </div>
+
+                <div class="double__slide-title">
+                    It is DOG
+                </div>
+                <div class="double__slide-descrition">
+                    FUNNY dog
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- SLIDER -->
+    <div class="slider">
+        
+        <input id="slide1" type="radio" class="slider__radio" name="currentSlideIndex" value="1" checked>
+        <input id="slide2" type="radio" class="slider__radio" name="currentSlideIndex" value="2">
+        <input id="slide3" type="radio" class="slider__radio" name="currentSlideIndex" value="3">
+        <input id="slide4" type="radio" class="slider__radio" name="currentSlideIndex" value="4">
+        <div class="slider__body">
+            <div class="slider__wrapper">
+                <div class="slider__item">
+                    <img src="img/img-Animation/space1.jpg" class="slider__item-img" alt="">
+                    <span class="slider--item-title">Slide 1</span>
+                </div>
+            
+                <div class="slider__item slider__item--active">
+                    <img src="img/img-Animation/space2.jpg" class="slider__item-img" alt="">
+                    <span class="slider--item-title">Slide 2</span>
+                </div>
+
+                <div class="slider__item">
+                    <img src="img/img-Animation/space3.jpg" class="slider__item-img" alt="">
+                    <span class="slider--item-title">Slide 3</span>
+                </div>
+
+                <div class="slider__item">
+                    <img src="img/img-Animation/space4.jpg" class="slider__item-img" alt="">
+                    <span class="slider--item-title">Slide 4</span>
+                </div>
+
+                <div class="slider__item">
+                    <img src="img/img-Animation/space5.jpg" class="slider__item-img" alt="">
+                    <span class="slider--item-title">Slide 5</span>
+                </div>
+
+            </div>
+
+            <ol class="slider__control">
+                <li class="slider__control--item">
+                    <label for="slide1" class="slider__control--label"></label>
+                </li>
+                <li class="slider__control--item">
+                    <label for="slide2" class="slider__control--label"></label>
+                </li>
+                <li class="slider__control--item">
+                    <label for="slide3" class="slider__control--label"></label>
+
+                </li>
+                <li class="slider__control--item">
+                    <label for="slide4" class="slider__control--label"></label>
+
+                </li>
+            </ol>
+            
+        
+        </div>
+    </div>
+    
+    <!-- MENU -->
+    <input type="checkbox" id="menu__switcher">
+    
+    <div class="menu">
+        <ul>
+            <li>
+                <a href="#1">HOME</a>
+            </li>
+            <li>
+                <a href="#2">ABOUT US</a>
+            </li>
+            <li>
+                <a href="#3">CONTACTS</a>
+            </li>
+            <li>
+                <a href="$4">WORKTIME </a>
+            </li>
+        </ul>
+    </div>
+    
+    <label for="menu__switcher" class="menu__switch-label">
+        <svg class="transform-hamburger" viewBox="0 0 20 20">
+            <line class="transform-hamburger__line-top" x1="1" y1="5" x2="19" y2="5" />
+            <line class="transform-hamburger__line-middle" x1="1" y1="10" x2="19" y2="10" />
+            <line class="transform-hamburger__line-bottom" x1="1" y1="15" x2="19" y2="15" />
+        </svg>
+    </label>
+
+    <!-- ALERT -->
+    <div class="alert alert--switch-top">
+        Hello,world!
+    </div>
+    
+    
+
+</body>
+</html>
