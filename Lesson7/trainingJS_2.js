@@ -506,12 +506,13 @@
 // alert(arr[1].name); // Марія
 // alert(arr[2].name); // Петро
 
-function getMissingElement(superImportantArray){
-  const getLostNumber = (arr1, arr2) => arr1.filter(item => arr2.includes(item));
-  const a = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
-  const c = getLostNumber (a, superImportantArray)
+// function getMissingElement(superImportantArray){
+//   const getLostNumber = (arr1, arr2) => arr1.filter(item => arr2.includes(item));
+//   const a = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+//   const c = getLostNumber (a, superImportantArray)
 
-  console.log(c);
-}
+//   console.log(c);
+// }
 
-getMissingElement( [0,5,1,3,2,9,7,6,4]);
+// getMissingElement( [0,5,1,3,2,9,7,6,4]);
+
