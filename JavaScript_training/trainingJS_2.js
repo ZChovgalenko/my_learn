@@ -516,3 +516,152 @@
 
 // getMissingElement( [0,5,1,3,2,9,7,6,4]);
 
+// function greet(name){  
+//   if(name === "Johnny")
+//     return "Hello, my love!";
+//   return "Hello, " + name + "!";
+// }
+
+// greet("Jo");
+
+
+// function basicOp(operation, value1, value2) {
+//     if(operation === '+') {
+//       console.log(value1 + value2);
+//       return (value1 + value2);
+//     } else if (operation === '-') {
+//         console.log(value1 - value2);
+//       return (value1 - value2);
+//     } else if (operation === '*') {
+//       console.log(value1 * value2);
+//       return (value1 * value2);
+//     } else if (operation === '/') {
+//       console.log(value1 / value2);
+//       return (value1 / value2);
+//     }
+//   }
+
+//   basicOp('+', 4, 7);
+//   basicOp('-', 15, 18);
+//   basicOp('*', 5, 5);
+//   basicOp('/', 49, 7);
+
+
+ // DATA
+//  let now = new Date();
+//  alert(now);
+
+// let Jan01_1970 = new Date(0);
+// alert(Jan01_1970);
+// let Jan03_1970 = new Date(48 * 3600 * 1000);
+// alert(Jan03_1970);
+
+// let date = new Date("2017-01-26");
+// alert(date);
+// alert(date.getTime());
+
+// alert(new Date(2011, 10, 3, 17, 30, 2));
+
+// let date = new Date();
+
+// alert( date.getHours() );
+// alert( date.getUTCHours() );
+
+// alert( new Date().getTimezoneOffset() );
+
+// let today = new Date();
+
+// today.setMinutes(22);
+// alert(today);
+// today.setHours(0, 0, 0, 0);
+// alert(today);
+
+// let date = new Date(2016, 0, 2); // 2 січня 2016
+
+// date.setDate(1); // встановити 1 день місяця
+// alert( date );
+
+// date.setDate(0); // мінімальний номер дня -- 1, тому передбачається, що це останній день попереднього місяця
+// alert( date ); 
+
+
+// let start = new Date();
+
+// for(let i = 0; i < 10000000; i++) {
+//     let doSomething = i * i * i;
+// }
+
+// let end = new Date();
+
+// alert(`Цикл зайняв ${(end - start)}мсек` );
+
+// let start = Date.now();
+
+// for(let i = 0; i < 10000000; i++) {
+//     let doSomething = i * i * i;
+// }
+
+// let end = Date.now();
+
+// alert(`Цикл зайняв ${(end - start)}мсек`);          // Віднімемо цифри, а не дати  
+
+// let date = new Date( Date.parse('2012-01-26T13:51:50.417-07:00') );
+
+// alert(date);
+
+
+// function diffSubtract(date1, date2) {
+//     return date2 - date1;
+//   }
+  
+//   function diffGetTime(date1, date2) {
+//     return date2.getTime() - date1.getTime();
+//   }
+  
+//   function bench(f) {
+//     let date1 = new Date(0);
+//     let date2 = new Date();
+  
+//     let start = Date.now();
+//     for (let i = 0; i < 100000; i++) {
+//         f(date1, date2);
+//     }
+//     return Date.now() - start;
+//   }
+  
+//   alert( 'Час diffSubtract: ' + bench(diffSubtract) + 'мс' );
+//   alert( 'Час diffGetTime: ' + bench(diffGetTime) + 'мс' );
+
+
+// function diffSubtract(date1, date2) {
+//   return date2 - date1;
+// }
+
+// function diffGetTime(date1, date2) {
+//   return date2.getTime() - date1.getTime();
+// }
+
+// function bench(f) {
+//   let date1 = new Date(0);
+//   let date2 = new Date();
+
+//   let start = Date.now();
+//   for (let i = 0; i < 100000; i++) f(date1, date2);
+//   return Date.now() - start;
+// }
+
+// let time1 = 0;
+// let time2 = 0;
+
+// // запустіть bench(diffSubtract) і bench(diffGetTime) кожен по 10 разів
+// for (let i = 0; i < 10; i++) {
+//   time1 += bench(diffSubtract);
+//   time2 += bench(diffGetTime);
+// }
+
+// alert( 'Загальний час для diffSubtract: ' + time1 );
+// alert( 'Загальний час для diffGetTime: ' + time2 );
+
+let date = new Date( Date.parse('2012-01-26T13:51:50.417-07:00') );
+
+alert(date);

@@ -9,8 +9,6 @@
 
 
 
-
-
 // // 6 //
 
 // function hasAccess (login, password ) {
@@ -147,7 +145,7 @@
 
 // if ( userNumber > 0) {
 //     alert ( 1 );
-// } else if ( userNumber < 0) {
+// } else if ( userNumber < 0) {                            // Використання структури else-if
 //     alert ( -1 );
 // } else {
 //     alert ( 0 );
@@ -161,38 +159,40 @@
 //   result = 'Вище';
 // }
 
-// let result = ( a + b < 4) ? 'Нижче' : 'Вище' ;
+// let result = ( a + b < 4) ? 'Нижче' : 'Вище' ;           // Застосування тернарного оператора
 
+// const login = prompt("Виберіть свою посаду", "Директор/ працівник");
 // let  message = ( login == 'Працівник') ? 'Привіт' :
 //     ( login == 'Директор') ? 'Вітаю' :
-//     ( login == '') ? 'Немає логіну' : 
-//     '';
+//     ( login == '') ? 'Немає логіну' :                    // Багаторівневий тернарний оператор
+//     'Допобачення';
+// alert(message);
 
 // let age = prompt('Введіть ваш вік', '');
 
 // let message = ( age < 3) ? 'привіт, крихітко' :
 //     ( age < 19 ) ? 'Вже дорослий?' :
-//     ( age < 30) ? 'як ти?' :
+//     ( age < 30) ? 'як ти?' :                             // Багаторівневий тернарний оператор
 //     ' який поважний вік' ;
 
 // alert(message);
 
 // let age = prompt('Ведіть число', '');
-// if( age <= 14 && age >= 90) {
-//     alert('Входить')
-// } else {
-//     alert('Не входить')
+// if( age <= 14 && age >= 90) {                             
+//     alert('Входить')                                   // Логічний оператор && (І)
+// } else {                                               // шукає перше хибне значення 
+//     alert('Не входить')                                // якщо всі true то повертає останнє значення
 // }
 
 // let age = prompt('Ведіть число', '');
 // if( !(age >= 14 && age <= 90)) {
-//     alert('Не входить')
+//     alert('Не входить')                              // Логічний оператор && (І)
 // } else {
 //     alert('входить')
 // }
 
 // let age = prompt('Ведіть число', '');
-// ( age < 14 || age > 90) ? alert( 'Не входить' ) : alert( 'входить' );
+// ( age < 14 || age > 90) ? alert( 'Не входить' ) : alert( 'входить' );        // Логічний оператор || (АБО) з тернарним
 
 // let login = prompt( 'Введіть логін', '' );
 
@@ -202,10 +202,10 @@
 //     alert( 'Ласкаво просимо!' )
 //     } else if ( password === null || password === '' ) {
 //     alert( 'Скасовано' );
-//     } else {
-//     alert('Неправильний пароль');
-//     } 
-// } else if ( login === null || login === '' ) {
+//     } else {                                                             // Логічний оператор || (АБО) з тернарним
+//     alert('Неправильний пароль');                                        // повертає перше ІСТИННЕ значення
+//     }                                                                    // не розрізняє false,0,"", null/undefined
+// } else if ( login === null || login === '' ) {                           // якщо всі false то повертає останнє значення  
 //     alert( 'Скасовано' );
 // } else {
 //     alert( 'Я вас не знаю' );
@@ -216,7 +216,17 @@
 // let nickName = prompt( 'Введіть нікнейм', '' );
 // const anon = 'Anonimus'
  
-// alert( lastName ?? firstName ?? nickName ?? anon );
+// alert( lastName ?? firstName ?? nickName ?? anon );                  // Оператор об'єднання з null ??
+                                                                        //повертає перше ВИЗНАЧЕНЕ значення 
+
+// let height;
+// console.log(height);
+// height = 25;                                                         
+// height = null;
+// console.log(height);
+// height = height ?? 100;                                      // Змінна === null і ми в неї записуємо своє значення
+// console.log(height);
+
 
 // let sum = 0;
 
