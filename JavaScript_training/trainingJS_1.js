@@ -232,8 +232,8 @@
 
 // while (true) {
 //     let value = +prompt('Введіть число', '');
-
-//     if(!value) break;
+//                                                                 //Цикл while, коли невідомо 
+//     if(!value) break;                                           // break - переривання циклу
 
 //     sum += value;
 
@@ -243,74 +243,56 @@
  
  
 // let i = 0;
-
+//                                                 // Виводимо в консоль непарні числа
 // for (i = 0; i < 10; i++) {
 
-//     if (i % 2 == 0) continue;
-
+//     if (i % 2 == 0) continue;                   //  Цикл for перевіряє умову, виконує завдання і збільшується на 
+//                                                // задане значення, і так по колу доти поки умова виконується
 //     console.log(i);
 // }
 
- 
 
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// for (i = 2; i <= 10; i++) {
-//     if ( i % 2 != 0) continue;
+// for (let i = 2; i <= 10; i++) {
+//     if ( i % 2 != 0) continue;                   // Виводимо в консоль парні числа до 10 включно 
 //     console.log(i);
 // }
 
-// for (let i = 0; i < 3; i++) {
+// for (let i = 0; i < 3; i++) {                      // Перебираємо числа від 0 до 3 
 //     alert( `число ${i}!` );
-//   }
+// }
 
 //   let i = 0;
 
-//   while (i < 3) {
+//   while (i < 3) {                                      // Перебираємо числа від 0 до 3 через цикл while
 //     alert( `число ${i}!` );
-//     i++;
+//     i++;                                               // Якщо не додати інкремент то буде безкінечний цикл
 //   }
 
 
 
 // let num;
 
-// do {
-//     num = prompt( 'Введене число більше за 100?', '');
-// } while (num <= 100 && num);
+// do {                                                        // Цикл do...while спочатку виконає одну ітерацію
+//     num = prompt( 'Введене число більше за 100?', '');      // а потім перевірить умову 
+// } while (num <= 100);
 
 
-// let n = 5;
+// let n = 4;
 // let sum = 0;
 
-// debugger;
-
-// for (let i = 0; i <= n; i++) {
-//     sum = sum + i; 
+// for (let i = 0; i <= n; i++) {                              // піднесення до квадрату числа
+//     sum = n * i; 
 // }
 
 // console.log(sum);
 
 // let arg = +prompt("Введіть значення?");
 // switch (arg) {
-//   case '0':
-//   case '1':
-//     alert( 'Один або нуль' );
-//     break;
-
+//   case +'0':     // згрупування однаковивого коду             // блок SWITCH CASE дає можливість замінити багаторазове
+//   case +'1':                                                 // використання if           
+//     alert( 'Один або нуль' );                               // значення змінної перевіряється на СТРОГУ нерівність
+//     break;                                                 // якщо значення є то заходимо в тіло case і до break
+//                                                           // або до кінця всього switch якщо немає break
 //   case '2':
 //     alert( 'Два' );
 //     break;
@@ -318,28 +300,43 @@
 //   case 3:
 //     alert( 'Ніколи не буде виконано!' );
 //     break;
-//   default:
+//   default:                                             // Необов'язкове значення, якщо ніц не підходить то бере його
 //     alert( 'Невідоме значення' );
 // }
 
 
-// function basicOp(operation, value1, value2)
-// {
+// function basicOp(operation, value1, value2) {
+
+//     switch(operation) {
+//         case '+' : alert(value1 + value2)
+//             break;
+//                                                         // Задачка на калькулятор через функція і switch
+//         case '-' : alert(value1 - value2)
+//             break;
+        
+//         case '*' : alert(value1 * value2)
+//             break;
+
+//         case '/' : alert(value1 / value2)
+//             break;
+
+//         default :
+//         throw new Error('Невідоме значення')   
+//     }
     
-//     let result = value1 + operation + value2;
-  
- 
-  
-//   console.log(result);
 // }
 
-// basicOp('-', 4, 11);
+// basicOp('+', 10, 5);
+// basicOp('-', 10, 5);
+// basicOp('*', 10, 5);
+// basicOp('/', 10, 5);
+// basicOp('4', 10, 5);
 
-// function showMess (text, name) {
-//     alert(text + ' : сказала ' + name);
+// function showMess (text = 'Hello', name = 'Katte') {        // Задаємо дефолтні значення для функції
+//     alert(text + ' : сказала ' + name);                        
 // }
 
-// showMess( );
+// showMess('Hey', 'Marry');                                  // Виклик ф-нкції
 
 // function checkAge(age) {
 //     if(age >= 18)  {
@@ -351,25 +348,25 @@
 
 // let age = prompt('Скільки Вам років?', '');
 
-// if (checkAge(age) ) {
+// if (checkAge(age)) {                                       // використовується результат попередньої функції
 //     alert('Доступ надано');
 // } else {
 //     alert('У доступі відмовлено');
 // }
 
 
-// function checkAge(age) {
-//     // return (age > 18) ? true : confirm('Батьки дозволили?'); 
-//     return (age > 18) || confirm('Батьки дозволили?');
+function checkAge(age) {
+    return (age > 18) ? true : confirm('Батьки дозволили?');  // використання тернарного оператора
+    // return (age > 18) || confirm('Батьки дозволили?');
 
-//     // if (age > 18) {
-//     //   return true;
-//     // } else {
-//     //   return confirm('Батьки дозволили?');
-//     // }
-//   }
+    // if (age > 18) {
+    //   return true;
+    // } else {
+    //   return confirm('Батьки дозволили?');
+    //}
+  }
 
-//   checkAge(4);
+  checkAge(4);
 
 
 // function min(a,b) {
