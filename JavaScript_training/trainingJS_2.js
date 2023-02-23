@@ -1,15 +1,8 @@
-//  ** Object **
+                                //  ** Object **
 
-
-
-
-
-
-
- 
-// let user = new Object();
+// let user = new Object();                  
 // let user = {};
-
+                                             // варіанти створення об'єкта
 // let user = {
 //     name : 'Іван',
 //     age : '33',
@@ -18,7 +11,7 @@
 // alert(user.name);
 // alert(user.age);
 
-// delete user.age;
+// delete user.age;                                       // проста робота з об'єктом
 // alert(user.age);
 
 // user['like birds'] = true;
@@ -27,43 +20,58 @@
 // alert(user['like birds']);
 
 // let key = prompt('що ви хочете знати про користувача?','name/age');
-// alert(user[key]);
+// alert(user[key]);                                                       // виклик значення через ключ
 
 // let fruit = prompt('Які фрутки взяти з пакета?', '');
 // let bag = {
-//     [fruit] : 5,
+//     [fruit] : 5,                                    // літеральна нотація для створення обчислювальної властивості
 // };
 
 // alert(bag.apple); // Якщо fruit = apple
     
-// function makeUser(name, age) {
+// function makeUser() {
+//     let name = prompt('name','');           // функція записує значення в об'єкт 
+//     let age = prompt('age','');
 //     return { 
-//         name : name, // name,  можемо використовувати як звичайні
-//         age : age,  // age,    так і скорочені властивості разом
+//         name : name,                    // name,  можемо використовувати як звичайні
+//         age : age,                     // age,    так і скорочені властивості разом
 //     };
 // }
 
-// let user = makeUser('Іван', 29);
+// let user = makeUser();
 // alert(user.name);
+// alert(user.age);
 
 // let user = {
-//     name : "Petro",
+//     name: "Petro",
 //     age : 35,
 //     admin : true,
 // };
 
-// alert(user['name'] === undefined);              // -- Перевірка на існування властивості
-// alert(user.call);                              // -- Якщо властивість не існує - викидає undefined 
-
-// for(let key in user){
-//     alert(key);
+// let key = prompt('Введіть значення ключа, яке шукаєте', '');
+// if (user[key] === undefined) {
+//     alert( 'Такого ключа не існує');                    // -- Перевірка на існування властивості
+// }  else {
 //     alert(user[key]);
+// } 
+
+
+// if (user['name'] === undefined) {
+//     alert( 'Такого ключа не існує');             // варіант на пряму          
+// };
+
+// alert(user.call);                                // -- Якщо властивість не існує - викидає undefined 
+
+// for(let key in user){                             // перебір через  for..in
+//     alert(key);                                 // перебираємо одну пару  ключ - значення за одну ітерацію 
+//     alert(user[key]);                         // переходимо до наступної
 // }
-// // alert("name" in user);
-// alert("29" in user);
+// alert("name" in user);
+// alert("29" in user);                         // перевірка наявності данних значень      
 // alert("age" in user);
 
 
+    
             // Hometasks
     // #1
 // let user = new Object; //or user = {};
@@ -662,6 +670,6 @@
 // alert( 'Загальний час для diffSubtract: ' + time1 );
 // alert( 'Загальний час для diffGetTime: ' + time2 );
 
-let date = new Date( Date.parse('2012-01-26T13:51:50.417-07:00') );
+// let date = new Date( Date.parse('2012-01-26T13:51:50.417-07:00') );
 
-alert(date);
+// alert(date);

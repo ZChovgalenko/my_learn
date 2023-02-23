@@ -1,0 +1,86 @@
+.cross__board {
+    
+    display: flex;
+    flex-wrap: wrap;
+
+    max-width: 600px;
+    width: 100%;
+    border: 5px solid rgb(245, 96, 96);
+
+    margin: 0 auto;
+
+    box-sizing: border-box;
+}
+
+.cross__board-item {
+    position: relative;
+    flex: 1 0 33%;
+
+    padding-top: 33%;
+    height: 0;
+
+    border: 3px solid rgb(245, 96, 96);
+
+    box-sizing: border-box;
+}
+
+.x, .o {
+    stroke-width: 7;
+    stroke-linecap: round;
+}
+
+.x {
+    stroke: rgb(223, 211, 48);
+}
+.o {
+    stroke: rgb(66, 41, 179);
+    fill: none;
+    stroke-dasharray: 200;
+
+    animation: a-o 3s linear 0s 1 normal backwards;
+}
+
+.x__line1,
+.x__line2 {
+    animation: x-o 1s linear 0s 1 normal backwards;
+    stroke-dasharray: 73;
+}
+
+.x__line2 {
+    animation-delay: 1s;
+}
+
+@keyframes x-o {
+    from {
+        stroke-dashoffset: 73;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes a-o {
+    from {
+        stroke-dashoffset: 200;
+    }
+
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+.cross__board-item-el {
+    position: absolute;
+
+    width: 80%;
+    height: 80%;
+
+    top: 10%;
+    left: 10%;
+}
+
+.cross__board-item:hover {
+    background-color: rgb(245, 96, 96);
+    opacity: 0.1;
+    cursor: -webkit-grab;
+}

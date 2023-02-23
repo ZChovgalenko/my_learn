@@ -355,18 +355,18 @@
 // }
 
 
-function checkAge(age) {
-    return (age > 18) ? true : confirm('Батьки дозволили?');  // використання тернарного оператора
-    // return (age > 18) || confirm('Батьки дозволили?');
+// function checkAge(age) {
+//     return (age > 18) ? true : confirm('Батьки дозволили?');  // використання тернарного оператора
+//     // return (age > 18) || confirm('Батьки дозволили?');
 
-    // if (age > 18) {
-    //   return true;
-    // } else {
-    //   return confirm('Батьки дозволили?');
-    //}
-  }
+//     // if (age > 18) {
+//     //   return true;
+//     // } else {
+//     //   return confirm('Батьки дозволили?');
+//     //}
+//   }
 
-  checkAge(4);
+//   checkAge(4);
 
 
 // function min(a,b) {
@@ -374,39 +374,45 @@ function checkAge(age) {
 
 //     if (a > b) {
 //         console.log(result);
-//         return result;
+//         return alert(result);                      // функція для порівняння чисел через оператори порівняння
 //     } else {
 //         console.log(result);
 //         return result;
 //     }
 // }
 
-// min(29,20);
+// min(9,20);
 
 // function min(a, b) {
 //     if (a < b) {
 //       console.log(b);  
 //       return a;
-//     } else {
+//     } 
 //       console.log(a);
 //       return b;
-//     }
+    
 //   }
 
+// min(29,27)
 
 
 // function checkAge(age) {
 //     if (age > 18) {
-//       return true;
+//       return true;                              // використання if else
 //     } else {
 //       return confirm('Батьки дозволили?');
 //     }
 //   }
+// checkAge(12);
 
 // function pow(x, n) {
 //     let result = x;
 
-//     for(let i = 1; i <= n; i++) {
+//     if ( n == 0) {                                          // випадок у нульовому степені 
+//       return 1;
+//     }                                                       // піднесення до степеня 
+
+//     for(let i = 1; i <= n; i++) {                           
 //         result *= x; 
 //     }
 
@@ -416,11 +422,11 @@ function checkAge(age) {
 // let x = prompt('Введіть число', '');
 // let n = prompt('Введіть степінь', '');
 
-// if(n < 1) {
+// if(n < 0) {
 //     alert(` Число ${n} не підтримується,введіть натуральне число`);
 // } else {
 //     alert(pow(x,n));
-// };
+// }
 
 
 // function sayHi() {
@@ -430,52 +436,50 @@ function checkAge(age) {
 // alert(sayHi());
 
 // function ask(question, yes, no) {
-//     if (confirm(question)) yes()
+//     if (confirm(question)) { yes() }                        // Коллбеки(функції повернення)
 //     else no();
 //   }
   
 //   function showOk() {
 //     alert( "Ви погодились." );
-//   }
-  
+//   }                                                   // використання: функції showOk, showCancel 
+//                                                       // передаються як аргументи для ask
 //   function showCancel() {
 //     alert( "Ви скасували виконання." );
 //   }
   
-//   // використання: функції showOk, showCancel передаються як аргументи для ask
-//   ask("Ви згодні?", showOk, showCancel);,
+//   ask("Ви згодні?", showOk, showCancel);
 
 
 // let n = prompt('Введіть число','');
 
-//  Функціональний вираз
+                                                  
 // let double = function(){
+//     let n = +prompt('Число','')                                          //  Функціональний вираз
 //     n = n * 2;
-//     return n;
+//     return alert(n);
 // };
+  
+// double();
 
-// // Стрілкова функція
+                                                                       // Стрілкова функція
 // let double = () => n * 2;
-
+// let n = 24;
 
 // alert(double());
 
 
 // let age = prompt('Скільки вам років?','');
 
-// let welcome = (age < 18) ?
-//     () => alert('Пока') :
+// let welcome = (age < 18) ?                                                // тернарний оператор + анонімні функції 
+//     () => alert('Пока') :                                                // стрілкові фнкції, упускаємо ім'я 
 //     () => alert('Привіт');
 
 // welcome();
 
 
-// 
+
 // let ask = (question, yes, no) => (confirm(question)) ? yes() : no();
 
-// ask(
-//     "Ви згодні?",
-//     () => { alert("Ви погодились."); },
-//     () => { alert("Ви скасували виконання."); }
-// );
+// ask("Ви згодні?", () => { alert("Ви погодились."); }, () => { alert("Ви скасували виконання."); } );  // анонімні коллбеки
   
